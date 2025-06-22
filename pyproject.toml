@@ -1,0 +1,25 @@
+[project]
+name = "illust-crawler"
+version = "0.1.0"
+description = "从互联网上的插画网站抓取元数据，包括作品信息、作者信息、作品图片等"
+authors = [
+    { name = "gacfox", email = "gacfox2021@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "scrapy (>=2.13.2,<3.0.0)",
+    "sqlalchemy (>=2.0.41,<3.0.0)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+priority = "primary"
