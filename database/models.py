@@ -91,4 +91,4 @@ class IllustImage(Base):
     height: Mapped[int] = mapped_column(Integer, default=0, nullable=False, comment='作品高度')
 
     def __repr__(self):
-        return f"IllustImage(id={self.id}, website='{self.website}', illust_id={self.illust_id})"
+        return f"IllustImage(id={self.id}, website='{self.website}', illust_id={self.illust_id}, small_url='{self.small_url}')"
